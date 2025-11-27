@@ -32,7 +32,7 @@ jobs:
           context: ./EmployeeManagement_CICD
           file: ./EmployeeManagement_CICD/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backfinal-emp:v1
+          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-1-emp:v1
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./finalemp-front
           file: ./finalemp-front/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-frontfinal-emp:v1
+          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-1-emp:v1
