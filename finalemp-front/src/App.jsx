@@ -356,7 +356,7 @@ function App() {
   const handleLogin = async (role, credentials) => {
     setLoading(true)
     try {
-      const url = `http://localhost:7070/api/auth/${role}/login` // backend endpoint
+      const url = `http://localhost:30025/api/auth/${role}/login` // backend endpoint
       const response = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
